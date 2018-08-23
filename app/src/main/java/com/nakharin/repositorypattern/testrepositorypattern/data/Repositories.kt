@@ -5,6 +5,7 @@ class Repositories {
 
         private var repository: Repository? = null
 
+        @Synchronized
         @JvmStatic
         fun getRepoInstance(serviceApi: ServiceApi): Repository {
             if (repository == null) {

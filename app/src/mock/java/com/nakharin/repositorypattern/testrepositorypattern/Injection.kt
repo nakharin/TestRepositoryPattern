@@ -7,6 +7,7 @@ import com.nakharin.repositorypattern.testrepositorypattern.data.Repository
 class Injection {
 
     companion object {
+
         @JvmStatic
         fun provideRepository(): Repository {
             return Repositories.getRepoInstance(MockServiceApiImpl())
