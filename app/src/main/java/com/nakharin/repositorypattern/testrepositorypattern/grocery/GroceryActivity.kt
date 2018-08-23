@@ -30,8 +30,8 @@ class GroceryActivity : AppCompatActivity(), GroceryContact.View {
 
     override fun showGroceryItems(items: List<GroceryItem>) {
         val strBuilder = StringBuilder()
-        for ((id) in items) {
-            strBuilder.append(id).append("\n")
+        for (i in items) {
+            strBuilder.append(i.toString()).append("\n")
         }
         txtMessage.text = strBuilder.toString()
     }
