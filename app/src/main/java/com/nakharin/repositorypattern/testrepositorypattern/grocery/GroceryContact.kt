@@ -11,7 +11,7 @@ class GroceryContact {
     }
 
     interface UserActionListener {
-        fun loadGrocecyItem(forceUpdate: Boolean)
+        fun loadGroceryItem(forceUpdate: Boolean)
         fun randomItem()
         fun autoAddItem()
     }

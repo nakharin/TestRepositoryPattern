@@ -21,7 +21,7 @@ class GroceryActivity : AppCompatActivity(), GroceryContact.View {
 
     override fun onResume() {
         super.onResume()
-        presenter.loadGrocecyItem(false)
+        presenter.loadGroceryItem(true)
     }
 
     override fun showToast(str: String) {

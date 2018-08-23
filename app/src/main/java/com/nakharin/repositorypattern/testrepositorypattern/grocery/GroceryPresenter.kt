@@ -6,7 +6,7 @@ import java.util.*
 
 class GroceryPresenter constructor(var view: GroceryContact.View, var repository: Repository): GroceryContact.UserActionListener {
 
-    override fun loadGrocecyItem(forceUpdate: Boolean) {
+    override fun loadGroceryItem(forceUpdate: Boolean) {
         if (forceUpdate) {
             repository.clearCacheData()
         }
